@@ -1,0 +1,28 @@
+[
+  {
+    "mealName": "Egg Curry",
+    "ingredient": "egg",
+    "imageUrl": "https://images.unsplash.com/photo-1604908176997-4314ed7d4f85",
+    "cookingTime": "20 mins",
+    "calories": "250 cal",
+    "recipeLink": "https://www.indianhealthyrecipes.com/egg-curry-recipe/"
+  },
+
+  {
+    "mealName": "Egg Fried Rice",
+    "ingredient": "egg",
+    "imageUrl": "https://images.unsplash.com/photo-1512058564366-18510be2db19",
+    "cookingTime": "15 mins",
+    "calories": "320 cal",
+    "recipeLink": "https://www.indianhealthyrecipes.com/egg-fried-rice/"
+  },
+
+  {
+    "mealName": "Banana Smoothie",
+    "ingredient": "banana",
+    "imageUrl": "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4",
+    "cookingTime": "5 mins",
+    "calories": "180 cal",
+    "recipeLink": "https://www.loveandlemons.com/banana-smoothie/"
+  }
+]

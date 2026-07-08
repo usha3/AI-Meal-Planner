@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!-- FIXED COLUMN -->
+    <TextView
+        android:id="@+id/txtMeal"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/cell_border"/>
+
+    <!-- SCROLLABLE PART (NO SCROLL VIEW HERE) -->
+    <LinearLayout
+        android:id="@+id/layoutDays"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <EditText android:id="@+id/day0" android:layout_width="120dp" android:layout_height="match_parent" android:hint="@string/monday_meal" android:inputType="text" android:autofillHints="name"/>
+        <EditText android:id="@+id/day1" android:layout_width="120dp" android:layout_height="match_parent"/>
+        <EditText android:id="@+id/day2" android:layout_width="120dp" android:layout_height="match_parent"/>
+        <EditText android:id="@+id/day3" android:layout_width="120dp" android:layout_height="match_parent"/>
+        <EditText android:id="@+id/day4" android:layout_width="120dp" android:layout_height="match_parent"/>
+        <EditText android:id="@+id/day5" android:layout_width="120dp" android:layout_height="match_parent"/>
+        <EditText android:id="@+id/day6" android:layout_width="120dp" android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</LinearLayout>

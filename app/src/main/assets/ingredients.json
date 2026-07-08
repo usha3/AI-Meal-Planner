@@ -1,0 +1,11 @@
+[
+  {"meal": "paratha", "ingredients": ["flour", "ghee", "salt"]},
+  {"meal": "dosa", "ingredients": ["rice", "urad dal", "oil"]},
+  {"meal": "samosa", "ingredients": ["potato", "oil", "spices"]},
+  {"meal": "chicken curry", "ingredients": ["chicken", "onion", "tomato", "ginger-garlic paste", "spices"]},
+  {"meal": "apple", "ingredients": ["apple"] },
+  {"meal": "oats", "ingredients": ["oats"] },
+  {"meal": "chapathi", "ingredients": ["wheat flour"] },
+  {"meal": "rice", "ingredients": ["rice"] },
+  {"meal": "spinach dal", "ingredients": ["dal", "tomato", "spinach", "spices"] }
+]

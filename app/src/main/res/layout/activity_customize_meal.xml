@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F6FA"
+    android:paddingTop="24dp"
+    android:paddingBottom="24dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <!-- TITLE -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weekly Meal Planner"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#222222"
+        android:padding="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:gravity="center">
+
+        <Spinner
+            android:id="@+id/spinnerMonth"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/spinner_border"
+            android:padding="5dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerYear"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/spinner_border"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFE0B2">
+    <LinearLayout
+        android:id="@+id/fixedColumn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Meal"
+            android:padding="0dp"
+            android:textStyle="bold" android:textColor="#006400" android:textSize="20dp"
+            android:layout_width="100dp" android:layout_height="60dp"
+            android:gravity="center" android:background="@drawable/cell_border"/>
+
+        <TextView android:text="Breakfast" style="@style/MealHeader"/>
+        <TextView android:text="Morning Snack" style="@style/MealHeader"/>
+        <TextView android:text="Lunch" style="@style/MealHeader"/>
+        <TextView android:text="Evening Snack" style="@style/MealHeader"/>
+        <TextView android:text="Dinner" style="@style/MealHeader"/>
+
+    </LinearLayout>
+        <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"
+                android:fillViewport="true">
+
+                <TableLayout
+                    android:id="@+id/tableMeals"
+                    android:layout_width="wrap_content"
+                    android:stretchColumns="*"
+                    android:layout_height="wrap_content">
+
+                    <!-- Header Row -->
+                    <TableRow>
+                        <TextView android:text="Mon" style="@style/DayHeader"/>
+                        <TextView android:text="Tue" style="@style/DayHeader"/>
+                        <TextView android:text="Wed" style="@style/DayHeader"/>
+                        <TextView android:text="Thu" style="@style/DayHeader"/>
+                        <TextView android:text="Fri" style="@style/DayHeader"/>
+                        <TextView android:text="Sat" style="@style/DayHeader"/>
+                        <TextView android:text="Sun" style="@style/DayHeader"/>
+                    </TableRow>
+
+                    <!-- Breakfast Row -->
+                    <TableRow>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                    </TableRow>
+                    <!-- Lunch Row -->
+                    <TableRow>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                    </TableRow>
+                    <TableRow>
+
+                        <EditText style="@style/TableCell" />
+
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                    </TableRow>
+                    <!-- Dinner Row -->
+                    <TableRow>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                        <EditText style="@style/TableCell"/>
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnPrevWeek"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="◀ Prev"
+            android:layout_marginEnd="50dp"/>
+
+        <Button
+            android:id="@+id/btnNextWeek"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Next ▶"
+            android:layout_marginStart="50dp"/>
+    </LinearLayout>
+
+    <!-- OPTIONS -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:radius="12dp"
+        android:elevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <CheckBox
+                android:id="@+id/cbSameEveryDay"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Same for every day this week"/>
+
+            <CheckBox
+                android:id="@+id/cbSameLastWeek"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Same as last week"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+

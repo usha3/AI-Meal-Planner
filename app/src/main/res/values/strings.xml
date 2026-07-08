@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MealPlannerApp</string>
+    <string name="default_web_client_id">YOUR_CLIENT_ID</string>
+    <string name="mon">Mon</string>
+    <string name="day_22">22</string>
+    <string name="monday_meal">Monday meal</string>
+    <string name="meal_planner">Meal Planner</string>
+    <string name="today_s_meals">Today\'s Meals</string>
+</resources>

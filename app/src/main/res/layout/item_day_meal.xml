@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- DAY -->
+    <TextView
+        android:id="@+id/txtDay"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+    <!-- BREAKFAST -->
+    <AutoCompleteTextView
+        android:id="@+id/etBreakfast"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Breakfast"
+        android:inputType="text"
+        android:completionThreshold="1"/>
+
+    <!-- LUNCH -->
+    <AutoCompleteTextView
+        android:id="@+id/etLunch"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Lunch"
+        android:inputType="text"
+        android:completionThreshold="1"/>
+
+    <!-- DINNER -->
+    <AutoCompleteTextView
+        android:id="@+id/etDinner"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Dinner"
+        android:inputType="text"
+        android:completionThreshold="1"/>
+
+</LinearLayout>
